@@ -35,6 +35,13 @@ a.menu{
     text-decoration: none;
 }
 
+a.menu:visited {
+    color: black;
+}
+a.menu:hover {
+    color: white;
+}
+
 table.menu{
     border-spacing: 50px 50px;
 }
@@ -62,28 +69,43 @@ body{
 
 h2.product_short{
     color: black;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
 }
 
 p.product_short{
     text-indent: 30px;
-    margin-left: 20px;
-    font-size: 14px;
+    margin-left: 250px;
+    margin-right: 250px;
+
+    font-size: 18px;
     font-style: italic;
     line-height: 16px;
-    color: brown;
+    color: black;
+}
+
+p.product_short:first-letter{
+    color: orangered;
+    font-size: 22px;
 }
 
 p.product_long{
     text-indent: 30px;
-    margin-left: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
 
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    color: #484343;
-    text-align: left;
+    color: black;
+    text-align: justify;
+}
+
+p.product_long:first-letter{
+    color: orangered;
+    font-size: 22px;
 }
 
 ul.product{
@@ -94,33 +116,62 @@ ul.product{
 }
 
 img.product{
-    border: 3px solid black;
+    border: 5px solid black;
+    margin: 0 auto;
+    height: 300px;
+    width: auto;
+}
+
+img.product:hover{
+    border: none;
+    height: 310px;
+    width: auto;
 }
 
 input[type=text].contacts{
     width: 300px;
     height: 25px;
     font-style: italic;
-    color: blueviolet;
+    text-transform: capitalize;
 }
 
 input[type=email].contacts{
     width: 300px;
     height: 25px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: blueviolet;
 }
 
 input[type=topic].contacts{
     width: 300px;
     height: 25px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-style: italic;
-    color: blueviolet;
 }
 
 textarea.contacts{
     width: 300px;
     height: 100px;
-    color: blueviolet;
+    text-transform: capitalize;
+}
+
+img.logo{
+    display:block;
+    margin:auto;
+}
+
+table.parameters{
+    margin: auto;
+    border: 5px double green;
+    text-align:center;
+}
+
+tr.parameters{
+    padding: 5px;
+    border: 1px solid #000;
+
+}
+
+td.descr{
+    font-weight: bold;
 }
